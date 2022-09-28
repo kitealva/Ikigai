@@ -1,23 +1,23 @@
 [
     {
         "id": 1,
-        "name": "Churro",
+        "name": "Creation",
         "picture": "../client/pictures/churro.jpg",
-        "description": "fkjhdhsakhfjkldhs jklafd ajklfd ljksa",
-        "likes": 100
+        "description": "To create with code to make life better",
+        "likes": 0
     },
     {
         "id": 2,
-        "name": "Banana Dog",
+        "name": "Potential",
         "picture": "fhdksdsf.jpg",
-        "description": "fkjhdhsakhfjkldhs jklafd ajklfd ljksa",
+        "description": "To unlock and use my full potential",
         "likes": 0
     },
     {
         "id": 3,
-        "name": "Big Dog",
+        "name": "Family",
         "picture": "fhdkfdsasa.jpg",
-        "description": "fkjhdhsakhfjkldhs jklafd ajklfd ljksa",
+        "description": "To make my family proud",
         "likes": 0
     }
 ]

@@ -18,4 +18,4 @@ app.post('/addDogs', addDogs)
 app.delete('/deleteCats/:id', deleteCats)
 app.put('/updateLikes/:id', updateLikes)
 
-app.listen(1010, () => console.log('I think this works on port 1010'))
+app.listen(1010, () => console.log('Up on port 1010'))

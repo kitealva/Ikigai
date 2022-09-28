@@ -5,7 +5,8 @@ body {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 800;
     background-image: url('./image/japanlounge.jpg');
-    background-size: 100%;  
+    background-size: 100%; 
+    text-align: center; 
 }
 .container {
 	width: 80%;
@@ -14,12 +15,7 @@ body {
 
 header {
   background: #131313;
-}
-
-header::after {
-  content: '';
-  display: table;
-  clear: both;
+  padding-bottom: 20px;
 }
 
 .logo {
@@ -27,9 +23,6 @@ header::after {
   padding: 10px 0;
 }
 
-nav {
-  float: left;
-}
 
 nav ul {
   margin: 0;
@@ -49,11 +42,12 @@ nav a {
   color: rgb(254, 254, 254);
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 18px;
+  margin: 100px;
 }
 
 nav a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(68, 243, 255);
 }
 
 nav a::before {
@@ -76,4 +70,63 @@ nav a:hover::before {
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+li {
+  font-size: 27px;
+  color: white;
+}
+
+main {
+  position: absolute;
+width: 100%;
+height: 356px;
+text-align: center;
+
+
+background: rgba(74, 74, 74, 0.44);
+}
+
+h3 {
+  font-size: 43px;
+  color: white;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 32px;
+  color: white;
+  font-style: bold;
+}
+h5 {
+  display: flex;
+  justify-content: center;
+  margin: 300px;
+}
+#box1 {
+height: 340px;
+width: 600px;
+margin: 100px;
+border-radius: 2%;
+background-image: url(./image/creation.jpg);
+background-image: 100%;
+}
+
+#box2 {
+  height: 340px;
+  width: 600px;
+  margin: 100px;
+  border-radius: 2%;
+  background-image: url(./image/unlimited\ potential.jpg);
+  background-size: 100%;
+  
+}
+
+#box3 {
+  height: 340px;
+  width: 600px;
+  margin: 100px;
+  border-radius: 2%;
+  background-image: url(./image/family.jpg);
+  background-size:100%;
 }
