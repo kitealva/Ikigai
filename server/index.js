@@ -7,15 +7,15 @@ app.use(express.json())
 app.use(cors())
 
 const {
-    getDogs, 
-    addDogs,
-    deleteCats,
+    getCards, 
+    addCards,
+    deleteCards,
     updateLikes
 } = require("./controller")
 
-app.get('/getDogs', getDogs)
-app.post('/addDogs', addDogs)
-app.delete('/deleteCats/:id', deleteCats)
+app.get('/getCards', getCards)
+app.post('/addCards', addCards)
+app.delete('/deleteCards/:id', deleteCards)
 app.put('/updateLikes/:id', updateLikes)
 
 app.listen(1010, () => console.log('Up on port 1010'))

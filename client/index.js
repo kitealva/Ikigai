@@ -1,41 +1,39 @@
 const baseURL = 'http://localhost:1010'
 
-const showDogs = document.querySelector('#dogDisplay')
-const addButton = document.querySelector('#addDog')
+const showCards = document.querySelector('#cardDisplay')
+const addButton = document.querySelector('#addCard')
 
-// Axios request to get drinks array
-//Loop over that array
-// Another function to create dog cards for each item in the array 
 
-const displayDogs = (arr) => {
+
+const displayCards = (arr) => {
     for(let i = 0; i < arr.length; i++){ 
-        createDogCard(arr[i])
+        createCard(arr[i])
     }
 }
 
-const createDogCard =(dog) => {
-    const dogCard = document.createElement('section')
-    dogCard.classList.add('dog-card')
+const createCard = (card) => {
+    const oneCard = document.createElement('section')
+    oneCard.classList.add('one-card')
     
-    dogCard.innerHTML =`
-        <img src= ${dog.picture} />
-        <p>${dog.name}</p>
-        <p>${dog.description}</p>
+    oneCard.innerHTML =`
+        <img src= ${card.picture} />
+        <p>${card.name}</p>
+        <p>${card.description}</p>
         <section>
-        <button onclick="updateDog(${dog.id}, 'dislike')">Dislike</button>
-        Popularity: ${dog.likes}
-        <button onclick="updateDog(${dog.id}, 'like')">Like</button>
+        <button onclick="updateCards(${card.id}, 'dislike')">Dislike</button>
+        Popularity: ${card.likes}
+        <button onclick="updateCards(${card.id}, 'like')">Like</button>
         </section>
-        <button onclick="deleteCats(${dog.id})">delete</button>
+        <button onclick="deleteCards(${card.id})">Delete</button>
     `
-    showDogs.appendChild(dogCard)
+    showCards.appendChild(oneCard)
 }
 
-const getAllDogs = () => {
-    axios.get(`${baseURL}/getDogs`)
+const getAllCards = () => {
+    axios.get(`${baseURL}/getCards`)
 
     .then((res) => {
-        displayDogs(res.data)
+        displayCards(res.data)
         console.log(res.data)
     })
     .catch((err) => {
@@ -43,43 +41,43 @@ const getAllDogs = () => {
     })
 }
 
-const deleteCats = (id) => {
-    axios.delete(`${baseURL}/deleteCats/${id}`)
+const deleteCards = (id) => {
+    axios.delete(`${baseURL}/deleteCards/${id}`)
     .then((res) => {
-        showDogs.innerHTML = ''
-        displayDogs(res.data)
+        showCards.innerHTML = ''
+        displayCards(res.data)
     })
 }
 
-const updateDog = (id, type) => {
+const updateCards = (id, type) => {
     axios.put(`${baseURL}/updateLikes/${id}`, {type})
     .then((res) => {
-        showDogs.innerHTML = ''
-        displayDogs(res.data)
+        showCards.innerHTML = ''
+        displayCards(res.data)
     })
 
 }
 
-const addDog = () =>{
+const addCard = () =>{
     let nameInput = document.querySelector('#name')
     let descriptionInput = document.querySelector('#description')
     let pictureInput = document.querySelector('#picture')
 
-    let newDog = {
+    let newCard = {
         name: nameInput.value,
         description: descriptionInput.value,
         picture: pictureInput.value
     }
 
-    axios.post(`${baseURL}/addDogs`, newDog)
+    axios.post(`${baseURL}/addCards`, newCard)
     .then((res) => {
-        showDogs.innerHTML = ''
+        showCards.innerHTML = ''
         nameInput.value = ''
         descriptionInput.value =''
         pictureInput.value =''
-        displayDogs(res.data)
+        displayCards(res.data)
     })
 }
-addButton.addEventListener('click' , addDog)
+addButton.addEventListener('click' , addCard)
 
-getAllDogs()
+getAllCards()

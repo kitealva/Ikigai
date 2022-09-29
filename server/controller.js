@@ -1,51 +1,51 @@
-const dogs = require('./db.json')
-let dogId = 4
+const cards = require('./db.json')
+let cardId = 4
 
 // Get, Put, Push, Delete
 
 module.exports = {
-    getDogs: (req, res) => {
-        res.status(200).send(dogs)
+    getCards: (req, res) => {
+        res.status(200).send(cards)
     },
 
-    addDogs: (req, res) => {
+    addCards: (req, res) => {
         const {name, picture, description} = req.body
 
-        let newDogsObject = {
-            id: dogId,
+        let newCardsObject = {
+            id: cardId,
             name: name,
             picture: picture,
             description: description, 
             likes: 0
         }
 
-        dogs.push(newDogsObject)
+        cards.push(newCardsObject)
 
-        dogId++
+        cardId++
 
-        res.status(200).send(dogs)
+        res.status(200).send(cards)
     },
 
     
-    deleteCats: (req,res) => {
-        const index = dogs.findIndex(el => el.id === +req.params.id)
+    deleteCards: (req,res) => {
+        const index = cards.findIndex(el => el.id === +req.params.id)
 
-        dogs.splice(index, 1)
+        cards.splice(index, 1)
 
-        res.status(200).send(dogs)
+        res.status(200).send(cards)
     },
 
     updateLikes: (req, res) => {
-        const index = dogs.findIndex(el => el.id === +req.params.id)
+        const index = cards.findIndex(el => el.id === +req.params.id)
         const {type} = req.body
 
         if(type === 'like'){
-            dogs[index].likes++
+            cards[index].likes++
         }else if(type === 'dislike'){
-            dogs[index].likes--
+            cards[index].likes--
         }
 
-        res.status(200).send(dogs)
+        res.status(200).send(cards)
     }
     
 }
