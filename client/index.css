@@ -130,3 +130,32 @@ background-image: 100%;
   background-image: url(./image/family.jpg);
   background-size:100%;
 }
+
+#cardDisplay {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+  
+}
+
+#name {
+  border-radius: 2px;
+  
+}
+
+.one-card {
+  background-color: #131313;
+  width: 300px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-image {
+  width: 300px;
+  height: 300px;
+}

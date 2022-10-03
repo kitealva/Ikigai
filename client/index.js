@@ -16,8 +16,8 @@ const createCard = (card) => {
     oneCard.classList.add('one-card')
     
     oneCard.innerHTML =`
-        <img src= ${card.picture} />
-        <p>${card.name}</p>
+        <img class="card-image" src= ${card.picture} />
+        <p class="card-name">${card.name}</p>
         <p>${card.description}</p>
         <section>
         <button onclick="updateCards(${card.id}, 'dislike')">Dislike</button>

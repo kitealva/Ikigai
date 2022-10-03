@@ -2,21 +2,21 @@
     {
         "id": 1,
         "name": "Creation",
-        "picture": "../client/image/creation.jpg",
+        "picture": "",
         "description": "To create with code to make life better",
         "likes": 0
     },
     {
         "id": 2,
         "name": "Potential",
-        "picture": "../client/image/potential.jpg",
+        "picture": "",
         "description": "To unlock and use my full potential",
         "likes": 0
     },
     {
         "id": 3,
         "name": "Family",
-        "picture": "../client/image/family.jpg",
+        "picture": "",
         "description": "To make my family proud",
         "likes": 0
     }
