@@ -20,11 +20,11 @@ const createCard = (card) => {
         <p class="card-name">${card.name}</p>
         <p>${card.description}</p>
         <section>
-        <button onclick="updateCards(${card.id}, 'dislike')">Dislike</button>
+        <button id= "dislike-button" onclick="updateCards(${card.id}, 'dislike')">Dislike</button>
         Popularity: ${card.likes}
-        <button onclick="updateCards(${card.id}, 'like')">Like</button>
+        <button id="like-button" onclick="updateCards(${card.id}, 'like')">Like</button>
         </section>
-        <button onclick="deleteCards(${card.id})">Delete</button>
+        <button id="delete-button" onclick="deleteCards(${card.id})">Delete</button>
     `
     showCards.appendChild(oneCard)
 }

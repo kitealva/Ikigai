@@ -159,3 +159,15 @@ background-image: 100%;
   width: 300px;
   height: 300px;
 }
+
+#delete-button {
+  background-color: purple;
+}
+
+#addCard {
+  background-color: brown;
+}
+
+#picture {
+  background-color: green;
+}
