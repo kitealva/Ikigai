@@ -1,23 +1,23 @@
 [
     {
         "id": 1,
-        "name": "Creation",
-        "picture": "",
-        "description": "To create with code to make life better",
+        "name": "CREATION",
+        "picture": "./image/creation.jpg",
+        "description": "TO CREATE USING CODE",
         "likes": 0
     },
     {
         "id": 2,
-        "name": "Potential",
-        "picture": "",
-        "description": "To unlock and use my full potential",
+        "name": "POTENTIAL",
+        "picture": "./image/potential.jpg",
+        "description": "TO UNLOCK MY FULL POTENTIAL",
         "likes": 0
     },
     {
         "id": 3,
-        "name": "Family",
-        "picture": "",
-        "description": "To make my family proud",
+        "name": "FAMILY",
+        "picture": "./image/family.jpg",
+        "description": "TO MAKE MY FAMILY PROUD",
         "likes": 0
     }
 ]

@@ -18,13 +18,11 @@ const createCard = (card) => {
     oneCard.innerHTML =`
         <img class="card-image" src= ${card.picture} />
         <p class="card-name">${card.name}</p>
-        <p>${card.description}</p>
+        <p class="card-desc">${card.description}</p>
         <section>
-        <button id= "dislike-button" onclick="updateCards(${card.id}, 'dislike')">Dislike</button>
-        Popularity: ${card.likes}
-        <button id="like-button" onclick="updateCards(${card.id}, 'like')">Like</button>
+        
         </section>
-        <button id="delete-button" onclick="deleteCards(${card.id})">Delete</button>
+        <button class="delete-button" onclick="deleteCards(${card.id})">DELETE</button>
     `
     showCards.appendChild(oneCard)
 }
