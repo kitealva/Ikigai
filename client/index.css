@@ -8,6 +8,7 @@ body {
     background-size: 100%; 
     text-align: center; 
 }
+
 .container {
 	width: 80%;
 	margin: 0 auto;
@@ -23,11 +24,11 @@ header {
   padding: 10px 0;
 }
 
-
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+
 }
 
 nav li {
@@ -176,8 +177,12 @@ h5 {
   background-color: rgb(51, 51, 51);
 }
 
+.delete-button:hover{
+  transform: translateY(1px);
+}
+
 .delete-button:active {
-  transform: translateY(-4px);
+  transform: translateY(-1px);
   
   
 }
@@ -188,26 +193,38 @@ h5 {
   text-decoration: #464545;
   border-radius: 4px;
   color: white;
-  border: 8px solid brown;
+  border: 2px solid rgb(0, 0, 0);
   cursor: pointer;
+}
+
+#addCard:hover {
+  background-color: rgb(17, 17, 17);
+}
+
+#addCard:hover {
+  transform: translateY(-1px);
+}
+
+#addCard:active {
+  transform: translateY(1px);
 }
 
 #picture {
   background-color: rgb(52, 52, 52);
   height: 28px;
-  border: 8px solid brown
+  border: 3px solid rgb(255, 255, 255)
 }
 
 #description {
   background-color: rgb(52, 52, 52);
   height: 28px;
-  border: 8px solid brown
+  border: 3px solid rgb(255, 255, 255)
 }
 
 #name {
   background-color: rgb(52, 52, 52);
   height: 28px;
-  border: 8px solid brown
+  border: 3px solid rgb(255, 255, 255)
 }
 
 .test {
@@ -226,4 +243,24 @@ h5 {
 
 .card-desc {
   text-transform: uppercase;
+}
+
+#tokyoproject {
+  background-image: url('./image/tokyo.jpg');
+  height: 858px;
+  width: auto;
+  padding-left: 60px;
+  padding-top: 40px;
+  font-size: 40px;
+  color: white;
+}
+
+#box1 {
+  height: 100px;
+  background-color: white;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  
+ 
 }
