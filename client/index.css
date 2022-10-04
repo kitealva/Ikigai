@@ -5,8 +5,9 @@ body {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 800;
     background-image: url('./image/japanlounge.jpg');
-    background-size: 100%; 
-    text-align: center; 
+    background-size: 100vw; 
+    text-align: center;
+    background-repeat: none; 
 }
 
 .container {
@@ -48,7 +49,7 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(68, 243, 255);
+  color: rgb(81, 81, 81);
 }
 
 nav a::before {
@@ -253,14 +254,81 @@ h5 {
   padding-top: 40px;
   font-size: 40px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #box1 {
-  height: 100px;
-  background-color: white;
-  width: 200px;
-  display: flex;
-  justify-content: center;
   
- 
+  height: 45px;
+  background-color: rgb(0, 0, 0);
+  width: 300px;
+  margin: 50px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.content {
+  height: 600px;
+  width: 1800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#box2 {
+  width: 450px;
+  height: 500px;
+  background-color: black;
+  margin: 80px;
+  border-radius: 4px;
+  margin-top: 1px;
+  color: black;
+}
+
+#tokyopicture {
+  width: 400px;
+  height: 450px;
+  margin: 25px;
+  background-image: url('./image/brady-img-2.jpg');
+  background-size: 100%;
+}
+
+#box3 {
+  width: 450px;
+  height: 500px;
+  background-color: black;
+  margin: 80px;
+  border-radius: 4px;
+  margin-top: 1px;
+  color: black;
+}
+#kyotopicture {
+  width: 400px;
+  height: 450px;
+  margin: 25px;
+  background-image: url('./image/brady-img-3.jpg');
+  background-size: 100%;
+  
+}
+
+#box4 {
+  width: 450px;
+  height: 500px;
+  background-color: black;
+  margin: 80px;
+  border-radius: 4px;
+  margin-top: 1px;
+  color: rgb(0, 0, 0);
+}
+
+#osakapicture {
+  width: 400px;
+  height: 450px;
+  margin: 25px;
+  background-image: url('./image/brady-img-1.jpg');
+  background-size: 100%;
 }
