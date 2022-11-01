@@ -105,7 +105,7 @@ h4 {
 margin-top: 9px;
 position: absolute;
 width: 100%;
-height: 542px;
+height: 1000px;
 text-align: center;
 flex: auto;
 
@@ -248,8 +248,8 @@ h5 {
 
 #tokyoproject {
   background-image: url('./image/tokyo.jpg');
-  height: 858px;
-  width: auto;
+  background-repeat: none;
+  height: 1300px;
   padding-left: 60px;
   padding-top: 40px;
   font-size: 40px;
@@ -257,6 +257,7 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
 }
 
 #box1 {
